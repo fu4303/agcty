@@ -1,0 +1,37 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.37
+    - 14.14.39
+    - 14.14.41
+    - 15.0.0
+  - dependency-name: date-fns
+    versions:
+    - 2.19.0
+    - 2.20.0
+    - 2.20.1
+    - 2.20.2
+    - 2.20.3
+  - dependency-name: eslint
+    versions:
+    - 7.23.0
+    - 7.24.0
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+    - 4.0.2
+  - dependency-name: tailwindcss
+    versions:
+    - 2.0.4
+    - 2.1.1
+  - dependency-name: sass
+    versions:
+    - 1.32.8
